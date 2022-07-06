@@ -1,0 +1,10 @@
+#main{
+    width: 100%;
+    height:auto;
+    background-color: gold;
+}
+#card{
+    height: 50px;
+    width: 200px;
+    background-color: pink;
+}
