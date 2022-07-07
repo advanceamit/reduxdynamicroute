@@ -5,7 +5,7 @@ import { useState,useEffect } from 'react';
 
 const Userdetails = () => {
     const param=useParams()
-    console.log(param.id);
+    //console.log(param.id);
     const [singledata,setSingledata]=useState({})
     
 
@@ -13,9 +13,16 @@ const Userdetails = () => {
     
     const data=useSelector((state=>state.user.users))
     const singleUser=()=>{
-        console.log(data[0]);
+        console.log(data[1]);
         for(let i=0;i<data.length;i++){
-            if(data[i].id===1){
+            console.log(data[i].id,param.id);
+            console.log("hi");
+            if(data[i].id==param.id)
+            
+            {
+                console.log("hi");
+                console.log(data[i].id);
+                console.log(param.id);
                 setSingledata(data[i])
             }
         }
